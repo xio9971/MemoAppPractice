@@ -13,13 +13,13 @@
   
 + __iOS 11과 iOS 13의 Modal__
 
-  viewWillAppear를 통해 메모 데이터를 reload 시킬려고 했으나
+  viewWillAppear를 통해 메모 데이터를 reload 시킬려고 했으나  
   modal방식에 따라 ViewLifeCycle이 다름을 확인
 
   간력하게 요약하자면 
   firstView, secondView 가 존재할때
   
-  sheet 방식
+  sheet 방식  
   secondView 에서 dismiss시 firstView의 viewWillAppear 호출이 안된다
 
   fullScreen 방식
