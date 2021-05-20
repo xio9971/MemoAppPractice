@@ -25,9 +25,7 @@
   2. fullScreen 방식</br>
   secondView 에서 dismiss시 firstView의 viewWillAppear 호출이 된다.
 
-  iOS 11에서는 기본 modalPresentationStyle은 .fullScreen이다.
-  
-  
+  iOS 11에서는 기본 modalPresentationStyle은 .fullScreen이다.</br>
   참고 : <https://leefilll.github.io/2020-04-12/swift-modal-in-ios13>
   
 
