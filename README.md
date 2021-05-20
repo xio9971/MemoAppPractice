@@ -22,7 +22,7 @@
   sheet 방식  
   secondView 에서 dismiss시 firstView의 viewWillAppear 호출이 안된다
 
-  fullScreen 방식
+  fullScreen 방식</br>
   secondView 에서 dismiss시 firstView의 viewWillAppear 호출이 된다.
 
   iOS 11에서는 기본 modalPresentationStyle은 .fullScreen이다.
