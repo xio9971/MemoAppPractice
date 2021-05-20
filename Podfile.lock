@@ -1,0 +1,16 @@
+PODS:
+  - STTextView (1.1.3)
+
+DEPENDENCIES:
+  - STTextView
+
+SPEC REPOS:
+  trunk:
+    - STTextView
+
+SPEC CHECKSUMS:
+  STTextView: cb4d43949845294bd7d203f870bb50a426b65e36
+
+PODFILE CHECKSUM: 963d4ff17c25d75b36b7b21f37bba927f5edba12
+
+COCOAPODS: 1.10.1

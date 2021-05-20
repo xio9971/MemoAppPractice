@@ -12,9 +12,18 @@ class ModalController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    var editTarget: Memo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let memo = editTarget {
+            navigationItem.title = "메모 편집"
+            textView.text = memo.content
+        }else {
+            navigationItem.title = "새 메모"
+            textView.text = ""
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -24,11 +33,18 @@ class ModalController: UIViewController {
             alert(message: "메모를 입력하세요")
             return
         }
+
+        if let target = editTarget {
+            target.content = text
+            DataManager.shared.saveContext()
+            NotificationCenter.default.post(name: ModalController.memoDidChange, object: nil)
+        }else {
+            DataManager.shared.addNewMemo(text)
+            NotificationCenter.default.post(name: ModalController.newMemoDidInsert, object: nil)
+        }
         
-        let newMemo = Memo(text)
-        Memo.dummyMemoList.append(newMemo)
-        
-        NotificationCenter.default.post(name: ModalController.newMemoDidInsert, object: nil)
+//        let newMemo = Memo(text)
+//        Memo.dummyMemoList.append(newMemo)
         
         self.dismiss(animated: true, completion: nil)
     }
@@ -51,4 +67,5 @@ class ModalController: UIViewController {
 extension ModalController {
     
     static let newMemoDidInsert = Notification.Name(rawValue: "newMemoDidInsert")
+    static let memoDidChange = Notification.Name(rawValue: "memoDidChange")
 }

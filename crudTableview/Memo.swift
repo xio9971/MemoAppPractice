@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct Memo {
-    
-    var content: String
-    var insertDate: Date
-    
-    init(_ content:String) {
-        self.content = content
-        self.insertDate = Date()
-    }
-    
-    static var dummyMemoList = [
-        Memo("dummy1111"),
-        Memo("dummy2222")
-    ]
-    
-}
+//struct Memo {
+//
+//    var content: String
+//    var insertDate: Date
+//
+//    init(_ content:String) {
+//        self.content = content
+//        self.insertDate = Date()
+//    }
+//
+//    static var dummyMemoList = [ 
+//        Memo("dummy1111"),
+//        Memo("dummy2222")
+//    ]
+//
+//}

@@ -17,11 +17,17 @@
 		9847E84C26539703000C64A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9847E84B26539703000C64A2 /* Assets.xcassets */; };
 		9847E84F26539703000C64A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9847E84D26539703000C64A2 /* LaunchScreen.storyboard */; };
 		9847E8572653A76C000C64A2 /* ModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847E8562653A76C000C64A2 /* ModalController.swift */; };
+		98D9C2EE2655D4B5009494B5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9C2ED2655D4B5009494B5 /* DataManager.swift */; };
+		98D9C2F02655DDD9009494B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9C2EF2655DDD9009494B5 /* DetailViewController.swift */; };
+		C9D32DE4A2B9FEC5E577C076 /* Pods_crudTableview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955BE2A65E61508A0DA45AAC /* Pods_crudTableview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12243C6F50FB15D6D6DC315C /* Pods-crudTableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crudTableview.debug.xcconfig"; path = "Target Support Files/Pods-crudTableview/Pods-crudTableview.debug.xcconfig"; sourceTree = "<group>"; };
+		5427E42B9D00D675C9FC2436 /* Pods-crudTableview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crudTableview.release.xcconfig"; path = "Target Support Files/Pods-crudTableview/Pods-crudTableview.release.xcconfig"; sourceTree = "<group>"; };
 		891A1A542654F16500ABD6B3 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		891A1A562654F6F300ABD6B3 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		955BE2A65E61508A0DA45AAC /* Pods_crudTableview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crudTableview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9847E83C26539700000C64A2 /* crudTableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crudTableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9847E83F26539700000C64A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9847E84126539700000C64A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		9847E84E26539703000C64A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9847E85026539703000C64A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9847E8562653A76C000C64A2 /* ModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalController.swift; sourceTree = "<group>"; };
+		98D9C2ED2655D4B5009494B5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		98D9C2EF2655DDD9009494B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D32DE4A2B9FEC5E577C076 /* Pods_crudTableview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,8 @@
 			children = (
 				9847E83E26539700000C64A2 /* crudTableview */,
 				9847E83D26539700000C64A2 /* Products */,
+				C68468AF00A2013969C6257F /* Pods */,
+				A0363DF5A6A5CB3013A58EDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +75,12 @@
 		9847E83E26539700000C64A2 /* crudTableview */ = {
 			isa = PBXGroup;
 			children = (
+				98D9C2EC2655D49D009494B5 /* Data */,
 				9847E83F26539700000C64A2 /* AppDelegate.swift */,
 				9847E84126539700000C64A2 /* SceneDelegate.swift */,
 				9847E84326539700000C64A2 /* ViewController.swift */,
 				9847E8562653A76C000C64A2 /* ModalController.swift */,
+				98D9C2EF2655DDD9009494B5 /* DetailViewController.swift */,
 				891A1A542654F16500ABD6B3 /* AlertController.swift */,
 				891A1A562654F6F300ABD6B3 /* Memo.swift */,
 				9847E84526539700000C64A2 /* Main.storyboard */,
@@ -79,6 +92,32 @@
 			path = crudTableview;
 			sourceTree = "<group>";
 		};
+		98D9C2EC2655D49D009494B5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				98D9C2ED2655D4B5009494B5 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A0363DF5A6A5CB3013A58EDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				955BE2A65E61508A0DA45AAC /* Pods_crudTableview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C68468AF00A2013969C6257F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12243C6F50FB15D6D6DC315C /* Pods-crudTableview.debug.xcconfig */,
+				5427E42B9D00D675C9FC2436 /* Pods-crudTableview.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9847E85326539703000C64A2 /* Build configuration list for PBXNativeTarget "crudTableview" */;
 			buildPhases = (
+				FC124170801EFE2412BBF38D /* [CP] Check Pods Manifest.lock */,
 				9847E83826539700000C64A2 /* Sources */,
 				9847E83926539700000C64A2 /* Frameworks */,
 				9847E83A26539700000C64A2 /* Resources */,
+				A646552A8A923D8049CC5125 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,12 +185,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A646552A8A923D8049CC5125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crudTableview/Pods-crudTableview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crudTableview/Pods-crudTableview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-crudTableview/Pods-crudTableview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC124170801EFE2412BBF38D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crudTableview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9847E83826539700000C64A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D9C2F02655DDD9009494B5 /* DetailViewController.swift in Sources */,
 				891A1A572654F6F300ABD6B3 /* Memo.swift in Sources */,
+				98D9C2EE2655D4B5009494B5 /* DataManager.swift in Sources */,
 				9847E84426539700000C64A2 /* ViewController.swift in Sources */,
 				9847E84026539700000C64A2 /* AppDelegate.swift in Sources */,
 				9847E8572653A76C000C64A2 /* ModalController.swift in Sources */,
@@ -299,6 +384,7 @@
 		};
 		9847E85426539703000C64A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12243C6F50FB15D6D6DC315C /* Pods-crudTableview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +403,7 @@
 		};
 		9847E85526539703000C64A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5427E42B9D00D675C9FC2436 /* Pods-crudTableview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
